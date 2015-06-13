@@ -1,27 +1,32 @@
 {
-  "uuid": "9c137cb9-b7e6-488e-b6bc-4dd0f7ff5dc0",
-  "shortName": "Fuzzy Zeit",
-  "longName": "Fuzzy Zeit",
-  "companyName": "Felix Rotthowe",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
-  "watchapp": {
-    "watchface": true
-  },
-  "appKeys": {},
-  "resources": {
-    "media": [
-      {
-        "menuIcon": true,
-        "type": "png",
-        "name": "IMAGE_MENU_ICON",
-        "file": "images/menu_icon_fuzzy_watch.png"
-      },
-      {
-        "type": "font",
-        "name": "FONT_TEXTFONT_40",
-        "file": "fonts/opensansl.ttf"
-      }
-    ]
-  }
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Felix Rotthowe/Niklas Hennigs",
+    "longName": "Fuzzy Jones",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "fonts/opensansl.ttf",
+                "name": "FONT_TEXTFONT_40",
+                "type": "font"
+            },
+            {
+                "file": "images/menu_icon_fuzzy_watch.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "2",
+    "shortName": "Fuzzy Jones",
+    "uuid": "9213c2c4-1194-11e5-9141-109adda6f906",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
 }
