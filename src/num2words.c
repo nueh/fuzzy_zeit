@@ -24,10 +24,10 @@ static size_t append_string(char* buffer, const size_t length, const char* str) 
 }
 
 void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
-  
+
   size_t remaining = length;
   memset(words, 0, length);
-  
+
   if (minutes == 0) {
     if (hours == 0) {
       remaining -= append_string(words, remaining, "mitter- nacht");
@@ -52,7 +52,7 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
     }
     return;
   };
-  
+
   if (minutes <= 3) {
     remaining -= append_string(words, remaining, "kurz nach");
   } else if (minutes <= 8) {
@@ -83,8 +83,8 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
     remaining -= append_string(words, remaining, "fünf vor");
   } else if (minutes <= 59) {
     remaining -= append_string(words, remaining, "kurz vor");
-  }
-  
+}
+
   remaining -= append_string(words, remaining, " ");
   if (minutes < 23) {
     remaining -= append_string(words, remaining, STUNDEN[hours % 12]);
