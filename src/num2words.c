@@ -58,7 +58,7 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
   } else if (minutes <= 8) {
     remaining -= append_string(words, remaining, "fünf\nnach\n");
   } else if (minutes <= 12) {
-    remaining -= append_string(words, remaining, "zehn\nach\n");
+    remaining -= append_string(words, remaining, "zehn\nnach\n");
   } else if (minutes <= 17) {
     remaining -= append_string(words, remaining, "viertel\nnach\n");
   } else if (minutes <= 22) {
