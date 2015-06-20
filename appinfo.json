@@ -9,8 +9,8 @@
     "resources": {
         "media": [
             {
-                "file": "fonts/opensansl.ttf",
-                "name": "FONT_TEXTFONT_40",
+                "file": "fonts/Axel-Bold.ttf",
+                "name": "FONT_AXEL_BOLD_40",
                 "type": "font"
             },
             {
@@ -21,10 +21,13 @@
             }
         ]
     },
-    "sdkVersion": "2",
+    "sdkVersion": "3",
     "shortName": "Fuzzy Jones",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "9213c2c4-1194-11e5-9141-109adda6f906",
-    "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
         "watchface": true

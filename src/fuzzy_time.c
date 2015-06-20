@@ -25,7 +25,7 @@ static void do_init(void) {
   window_stack_push(s_data.window, animated);
 
   window_set_background_color(s_data.window, GColorBlack);
-  GFont font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TEXTFONT_40));
+  GFont font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_AXEL_BOLD_40));
 
   Layer *root_layer = window_get_root_layer(s_data.window);
   GRect frame = layer_get_frame(root_layer);
@@ -34,7 +34,7 @@ static void do_init(void) {
   text_layer_set_background_color(s_data.label, GColorBlack);
   text_layer_set_text_color(s_data.label, GColorWhite);
   text_layer_set_font(s_data.label, font);
-  text_layer_set_text_alignment(s_data.label, GTextAlignmentLeft);
+  text_layer_set_text_alignment(s_data.label, GTextAlignmentRight);
   layer_add_child(root_layer, text_layer_get_layer(s_data.label));
 
   time_t now = time(NULL);
